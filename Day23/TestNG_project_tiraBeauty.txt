@@ -1,0 +1,11 @@
+Create Mini project on Tira Beauty E-Commerce Website
+URL= https://www.tirabeauty.com/
+1. create module wise requirements and upload in jira tool. in Jira tool create EPIC, Story and Task
+2. Create test plan on tira beauty requirement module wise . create in excel sheet.
+3. Write test cases for all the possible scenarios(Excel sheet)(At least 10 testcases)
+4. Create Automated testcases in TestNG framework using Page object model concept, and add excel file for data driven testing(At least 10 testcases)
+5. find out all the defect and create defect report on all the defect, and then upload in jira tool using Bug.
+6. Maintain all the testing reports for your positive and negative scenarios
+7. Create Test Analysis Report on Tira Beauty project
+8. Create presentation on tira beauty application and Present in front of class(Duration 2 min) ,
+   Project Presentation date=19/8/2025
