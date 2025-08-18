@@ -1,0 +1,14 @@
+Create 2 test cases, disable one using enabled = false, and run only the active test.
+Write a test to run the same test multiple times.
+Write test cases for a dummy login page using @Parameters in testng.xml.
+Write dependent test cases:
+
+login()
+
+search Product() (depends on login)
+
+logout() (depends on search)
+
+
+ 5.Use Data Provider to supply multiple sets of usernames/passwords to a login test.
+ 6.Run test cases in parallel (methods, classes, tests) using parallel attribute in testng.xml.
