@@ -1,0 +1,5 @@
+e57a587fb92b4fbf9e3fc94e4f248e04
+
+jenlins path file===C:\Users\dell\.jenkins\secrets\initialAdminPassword
+
+Jenkins presentation= https://docs.google.com/presentation/d/1e0DIrC8Dy_9O83f1YipdjI2U-5j4LGedRXBTQbiXpMc/edit?slide=id.p5#slide=id.p5
