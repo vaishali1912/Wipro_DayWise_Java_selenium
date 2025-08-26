@@ -1,0 +1,12 @@
+Create Mini project on Tira Beauty E-Commerce Website(Using cucumber(page object model and generate reports))
+URL= https://www.tirabeauty.com/
+
+3. Write test cases for all the possible scenarios(Excel sheet)(At least 10 testcases)
+4. Create Automated testcases in Cucumber framework using Page object model concept, and add data driven testing(At least 10 testcases)
+5. find out all the defect and create defect report on all the defect, and then upload in jira tool using Bug.
+6. Maintain all the testing reports for your positive and negative scenarios
+7. Create Test Analysis Report on Tira Beauty project
+8. Create all Cucumber reports 1. HTML report
+                               2. Json report 
+                               3. JUnits reports
+                               4. TestNG reports
