@@ -1,0 +1,181 @@
+Project 4: https://demowebshop.tricentis.com/
+
+Tools & Tech Stack 
+•	Language: Backend-Java
+•	Build Tool: Maven (dependency management) 
+•	Test Frameworks: 
+o	TestNG (parallel execution, grouping, configuration, Data-driven, accessing Excel ) 
+o	Cucumber (BDD style scenarios with Gherkin(feature file) implement step files using Page Object Model and generate HTML, JSON, JUNIT, and TESTNG reports using test runner ) 
+•	Reporting: HTML, JSON, JUNIT, and TESTNG
+•	Version Control: GitHub 
+•	Project Management: JIRA (Agile Epics, stories, tasks, bug tracking) 
+ 
+ 
+Objective 
+The objective of this capstone project is to design and implement a scalable, maintainable, and reusable test automation framework using Java, Maven, TestNG, and Cucumber that enables efficient web application testing across multiple demo websites. The framework will support parallel execution, BDD-style test scenarios, and detailed reporting with Extent Reports, while integrating with GitHub for version control, JIRA for project management, and optionally Jenkins for CI/CD pipelines. This project aims to simulate an industry-standard automation setup that improves test coverage, traceability, and collaboration within Agile teams. 
+
+ 
+Capstone Project Plan 
+Team Organization 
+8-9 Groups (6–7 members each), Team should collaborate and complete the project in Agile Model 
+Roles per Group: 
+Product Owner (PO): Defines scope & priorities 
+Scrum Master (SM): Ensures Agile process & removes blockers 
+Developers: Build automation scripts & maintain framework 
+Testers: Design manual test cases, execute & validate automation 
+ 
+Project Flow 
+1. Requirement Analysis & Test Design (Create Manual Test Cases) 
+Review application under test (AUT) functionalities (e.g., login, checkout, search ,filters, add to  cart, , delete, change address, change username, check daily deal, go to fresh and search product and then add to fresh cart). 
+Identify critical user journeys. 
+Write Manual Test Cases in Excel/Jira (covering positive, negative, edge cases). 
+Get review & sign-off from PO/SM. 
+ 
+ 
+2. Project Setup 
+Create a GitHub repository for each group/project. 
+Clone repo locally → initialize Maven project structure. 
+Configure dependencies (Selenium, TestNG, Cucumber, Extent Reports). 
+Commit initial framework setup → push to GitHub. 
+ 
+3. Selenium Automation 
+Convert manual test cases → TestNG & BDD feature files (Cucumber). 
+Implement step definitions & page object model classes in Java. 
+Use TestNG for execution control (parallel, grouping). 
+Use Excel & JDBC   Integration and Extent Reporting 
+Validate functionality → push working automation scripts to GitHub. 
+ 
+4. Jira Integration 
+Create Epics → User Stories → Tasks → Subtasks. 
+Link test cases to stories for traceability. 
+Log defects when automated tests fail. 
+Track sprint progress in Agile boards. 
+ 
+5.Build project (Maven clean install) 
+Run Selenium + TestNG + Cucumber tests 
+Generate Extent HTML Reports 
+ 
+6. Reporting & Analysis 
+Generate Extent Reports after each test execution. 
+Share execution summary with team via Jira/GitHub Wiki. 
+Analyse failed tests → log defects in Jira. 
+Refactor/reuse automation scripts for better stability & maintainability. 
+ 
+ 
+7. Continuous Improvement 
+Update manual & automated test cases based on new requirements/bugs. 
+Conduct retrospectives at the end of each sprint. 
+Enhance framework with utilities (e.g., reusable methods, listeners, hooks). 
+
+8.Test Strategy(Modulewise)
+
+1. Test Strategy
+The testing approach for the E-commerce website ensures robust validation of business-critical flows including product browsing, purchase lifecycle, and seller interactions. The focus is on functional accuracy, performance, and usability across browsers and devices.
+Framework Approach
+•	BDD (Behaviour Driven Development): Test cases designed in Cucumber BDD format for better readability and stakeholder collaboration.
+•	Page Object Model (POM): Implemented to enhance code reusability and maintainability.
+•	TestNG with XML Integration: Parallel test execution and modular test grouping via XML configuration.
+•	Data-Driven Testing: Leveraging BDD Examples/DataTables for different input datasets.
+•	Modular Framework: Segregating modules like Login, Registration, Cart, Payment, etc. for scalability.
+Additional Strategies
+•	Cross-Browser Execution: Ensuring compatibility across Chrome, Firefox, Safari, and Edge.
+•	Coding Standards: Following Java coding conventions, meaningful method names, proper logging, and exception handling.
+•	Screenshot Capture: Automatic screenshots on pass/failure for traceability.
+•	Extent Reports Integration: Detailed execution reports with step-wise status, logs, and screenshots.
+________________________________________
+2. Functional Test Cases
+2.1 General Website Test Cases
+•	Verify navigation across categories and product listings.
+•	Validate all internal/external links (no broken links).
+•	Check company logo, product titles, descriptions, and pricing visibility.
+•	Ensure product images and category listings load correctly.
+•	Validate product counts on category pages.
+________________________________________
+2.2 Login Page Test Cases
+•	Verify mandatory field validations (email, password).
+•	Display appropriate error messages for blank/invalid inputs.
+•	Verify session persistence while browsing.
+•	Validate session timeout and auto logout after inactivity.
+•	Ensure secure logout functionality prevents access to user pages.
+________________________________________
+2.3 Registration Page Test Cases
+•	Validate presence and marking of required fields.
+•	Verify usability elements (dropdowns, radio buttons, checkboxes).
+•	Validate form submission with proper and improper inputs.
+•	Client-side validations for email, date, numeric fields.
+•	Ensure trimming of spaces and error display for blank mandatory fields.
+•	Verify reset/cancel button clears inputs correctly.
+________________________________________
+2.4 Address Book Test Cases
+•	Validate address field formats and mandatory checks.
+•	Add, edit, and delete addresses successfully.
+•	Verify product availability based on entered address.
+________________________________________
+2.5 Search Functionality Test Cases
+•	Validate relevance of displayed search results.
+•	Ensure product details (image, name, price, reviews) are visible.
+•	Verify pagination (no duplicates across pages).
+•	Validate sorting and filtering persistence across navigation.
+•	Ensure product counts match filtered/sorted criteria.
+________________________________________
+2.6 Wishlist Test Cases
+•	Verify products added to wishlist are displayed.
+•	Validate update and share wishlist functionality.
+•	Ensure items can be added to cart directly from wishlist.
+________________________________________
+2.7 Product Details Page Test Cases
+•	Validate accuracy of product details and description.
+•	Ensure add-to-cart and add-to-wishlist functionality works.
+•	Verify product availability checker.
+•	Allow rating/review submission.
+________________________________________
+2.8 Cart Test Cases
+•	Verify product addition, updates, and removals.
+•	Validate cart details (product name, image, price, total).
+•	Ensure coupon discounts and error handling for invalid coupons.
+•	Validate cart persistence across sessions (as per requirements).
+________________________________________
+2.9 Product Purchase Flow Test Cases
+•	Validate selection of product attributes (size, color, etc.).
+•	Ensure checkout works for single/multiple products.
+•	Validate location-based availability and COD/payment methods.
+•	Verify error handling for exceeding purchase limits.
+•	Ensure order cancellation and product return flows work.
+________________________________________
+2.10 Payment Page Test Cases
+•	Verify presence of multiple payment methods (Card, PayPal, Bank Transfer, Installments).
+•	Ensure payment gateway security (encryption, tokenization).
+•	Validate successful transactions and handling of declined payments.
+________________________________________
+2.11 Seller Panel Test Cases
+•	Validate authorized access for sellers.
+•	Ensure product creation for single/multiple entries.
+•	Restrict duplicate or invalid product entries.
+•	Validate seller updates (price, description) reflect after approval.
+•	Verify product visibility on site after publishing.
+________________________________________
+
+
+2.12 Post-Purchase Test Cases
+•	Ensure order cancellation and quantity update are functional.
+•	Verify order history and recent order details.
+•	Validate account management (billing/shipping updates, password changes, account deletion).
+________________________________________
+3. Reporting & Deliverables
+•	Extent Reports with detailed execution logs, screenshots, and results summary.
+•	Defect Reports logged in JIRA/bug tracking tool with severity and priority.
+•	Traceability Matrix mapping test cases to requirements.
+•	Daily Execution Summary for stakeholders.
+
+Consider this scenarios for All applications
+1. Automate for different user roles (guest, registered user, admin).
+2. Include negative testing (invalid data, forced failures).
+Few More Validations can be added
+1. Reset/clear buttons restore form state.
+2. Email and password strength, format, and duplicate checks.
+3. Coupon expiry validation.
+4. Payment retries and timeout handling.
+   
+ 
+                   -------
+
