@@ -1,0 +1,139 @@
+Case Study Name
+
+Recommendations  Suggestions  Improvements  Validations
+
+E-Commerce Project
+
+Improvements    Suggestions
+1. Automate for different user roles (guest, registered user, admin).
+2. Include negative testing (invalid data, forced failures).
+Few More Validations can be added
+1. Resetclear buttons restore form state.
+2. Email and password strength, format, and duplicate checks.
+3. Coupon expiry validation.
+4. Payment retries and timeout handling.
+
+Thomas Cook Tours
+
+Improvements    Suggestions
+1. Automate error flows (not just happy path) for login, booking, and payments.
+2. Run scripts on multiple browsers for better coverage.
+3. Integrate CICD for continuous, automated regressions.
+4. Add screenshots and logs in reports for all passfail scenarios.
+Few More Validations can be added
+1. Validate session timeout, auto logout, and secure redirection.
+2. Check field limits (e.g. max travelers, input length) and data format (email, address).
+3. Check dropdown, radio, and checkbox UI behavior (enableddisabled, requiredoptional).
+4. Test concurrency — use cases like multiple bookingspayments at same time.
+
+Health Care Domain
+
+Improvements    Suggestions
+1. Automate edgenegative scenarios for forms and user management.
+2. Integrate accessibility and usability checks for healthcare compliance.
+3. Add API-level tests for backend validation, not just UI.
+4. Expand cross-browserdevice coverage using CICD Jenkins pipelines.
+Few More Validations can be added
+1. Check mandatory field enforcement, emailphone format, and data constraints for all forms.
+2. Validate password strength, errorwarning messages, and recovery flows.
+3. Ensure session expiry, secure logout, and data privacy.
+4. Test navigation for broken links, incorrect redirects, and menu access.
+
+HP Travels – Customer Registration & Flight Search
+
+Few More Validations can be added
+
+1. Validate mandatory fields, emailmobile format, and strong password enforcement.
+2. Check duplicate user sign-up and booking overlap prevention.
+3. Test booking confirmation delivery (SMSemail delays, invalid address).
+4.Validate all filters (flight type, date range, passenger limits) with both validinvalid inputs.
+
+Capstone Projects
+
+Recommendations  Suggestions  Improvements  Validations
+
+Capstone Project 1 Insurance Policy Management Automation
+
+Improvements    Suggestions
+
+1. Add more comprehensive negativeedge case automation for all policy and claims modules.
+2. Integrate API testing for backend validation (not just UI).
+3. Automate role-based access tests (admin, agent, customer).
+4. Enhance reporting dashboard and notification for critical failures.
+5. Use parallel execution for multiple policy scenarios.
+
+Few More Validations can be added
+
+1. Policy premium calculator check for correct premium based on inputs and invalid ranges.
+2. Claims validate status tracking, emailSMS notifications, and document attachments.
+3. Payment gateway enforce error handling (invalidexpired card, retry, refunds).
+4. Session timeout and secure logout.
+5. Field-level checks mandatory, pattern, multi-format, and duplicate entries.
+
+Capstone Project 2 Banking Loan & Financial Transaction
+
+Improvements    Suggestions
+1. Add negative testing for loan rejection scenarios and edge cases.
+2. Integrate API-level testing for backend loan processing and EMI calculations.
+3. Automate cross-browser testing and mobile responsiveness.
+4. Enhance reporting with detailed financial transaction logs and audit trails.
+5. Use real-world data sets for loan amounts, CIBIL scores, and customer profiles.
+Few More Validations can be added
+1. Loan eligibility Validate salary thresholds, CIBIL score ranges, and document verification.
+2. EMI calculations Check interest rate accuracy, payment schedules, and prepayment scenarios.
+3. Fund transfers Verify account balance checks, daily limits, and transaction failures.
+4. Security Test OTP expiry, session timeouts, and unauthorized access prevention.
+5. Data integrity Validate transaction history accuracy and account balance updates
+
+Capstone Project 3
+
+Improvements    Suggestions
+1. Add negative testing for loan rejection scenarios and edge cases.
+2. Integrate API-level testing for backend loan processing and EMI calculations.
+3. Automate cross-browser testing and mobile responsiveness.
+4. Enhance reporting with detailed financial transaction logs and audit trails.
+5. Can mention about the POM approach, TestNG groups, screenshots on failure
+
+Capstone Project 4
+
+Improvements    Suggestions
+1. Add negative testing for loan rejection scenarios and edge cases.
+2. Integrate API-level testing for backend loan processing and EMI calculations.
+3. Automate cross-browser testing and mobile responsiveness.
+4. Enhance reporting with detailed financial transaction logs and audit trails.
+5. Can mention about the POM approach, TestNG groups, screenshots on failure
+
+Capstone Project 5  PHP Travels
+
+Improvements    Suggestions
+1. Add negative testing for loan rejection scenarios and edge cases.
+2. Can mention API testing for payment workflow and CICD implementation as optional
+
+Capstone Project 6
+
+Thomas Cook - Described as Manual testing project. Automation is mentioned as Enhancement without any specifications on tool  languagebrowser  platforms
+
+Capstone Project 7 E-Commerce web-site
+
+Improvements    Suggestions
+1. Add negative testing for loan rejection scenarios and edge cases.
+2. Integrate API-level testing for backend processing areas
+3. Automate cross-browser testing and mobile responsiveness.
+4. Enhance reporting with detailed financial transaction logs and audit trails.
+5. Can mention API testing for payment workflow and CICD implementation as optional
+
+Capstone Project 8 Open Cart
+
+Improvements    Suggestions
+Here API Testing is mentioned only in project overview and more details can be added for the same including the validations , assertions and Error reporting mechanisms
+
+
+Capstone Project 9 Health Care domain
+Capstone Project 10 Booking.com
+
+Improvements    Suggestions
+1. Add negative testing for loan rejection scenarios and edge cases.
+2. Integrate API-level testing for backend loan processing and EMI calculations.
+3. Automate cross-browser testing and mobile responsiveness.
+4. Enhance reporting with detailed financial transaction logs and audit trails.
+5. Can mention about the POM approach, TestNG groups, screenshots on failure
